@@ -1,0 +1,85 @@
+:root {
+    background-color: var(--cor-bg-one);
+
+}
+
+.header {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    /* margin: auto; */
+    /* margin: auto; */
+    padding: 20px 10%;
+    /* padding: 2rem 9%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--cor-bg-one);
+    z-index: 1;
+
+}
+
+/* ---------- LOGO ---------- */
+.logo {
+    color: var(--cor-main-two, rgba(165, 42, 42, 10));
+    font-size: 4.8rem;
+    font-weight: 700;
+    transition: .7s ease-out;
+
+
+}
+
+.logo:hover {
+    box-shadow: 100px 45px 300px var(--cor-bg-one);
+    text-shadow: 100px 45px 0px rgba(165, 42, 42, 10);
+    color: transparent;
+    -webkit-text-stroke: .7px var(--cor-main-two);
+
+}
+
+/* ---------- NAVEGATION ---------- */
+.navegation {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.navegation a {
+    color: var(--cor-main-one);
+    padding: 3px;
+    transition: .4s;
+    position: relative;
+}
+
+.navegation a:hover {
+    color: var(--cor-main-two);
+}
+
+.navegation a:first-child {
+    color: var(--cor-main-two);
+}
+
+.navegation a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--cor-main-two);
+    transition: .5s;
+
+}
+
+.navegation a:hover::after {
+    width: 100%;
+
+}

@@ -1,0 +1,243 @@
+/* ---------- SECTION ---------- */
+.aboutMe {
+    width: 100%;
+    height: 100vh;
+    padding: 12rem 10% 20px 10%;
+    /* margin-top: 12rem; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ---------- INFORMATION-PERSONAL ---------- */
+.information-personal {
+    width: 60%;
+    padding: 10px;
+}
+
+.information-personal .title-about {
+    font-size: 6.4rem;
+    font-weight: 700;
+    color: var(--cor-main-one, rgba(255, 245, 238, 10));
+}
+
+.information-personal .profession {
+    font-size: 4.8rem;
+    line-height: 50px;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+
+    color: transparent;
+    -webkit-text-stroke: .9px var(--cor-main-two);
+
+}
+
+.information-personal .description {
+    font-size: 2.0rem;
+    text-align: justify;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--cor-main-one, rgba(255, 245, 238, 10));
+
+}
+
+.information-personal .description-additional {
+    font-size: 2.0rem;
+    font-weight: 600;
+    margin-bottom: 100px;
+    color: var(--cor-main-one, rgba(255, 245, 238, 10));
+
+}
+
+/* ---------- BTNS ---------- */
+
+.btns {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+
+    text-align: center;
+    margin: 0 0 15rem 5rem;
+
+}
+
+/* ---------- BTN-HIRE ---------- */
+.btns .btn-hire {
+    display: inline-block;
+
+    width: 310px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: var(--cor-main-one);
+
+    padding: 5px 50px;
+    border: 2px solid var(--cor-main-two);
+    border-radius: 10px;
+
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+
+}
+
+.btns .btn-hire:hover {
+    border: 2px solid var(--cor-main-one);
+}
+
+.btns .btn-hire::before {
+    background-color: var(--cor-main-two);
+
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: .5s;
+
+}
+
+.btns .btn-hire:hover::before {
+    width: 0%;
+}
+
+/* ---------- BTN-TALK ---------- */
+
+.btns .btn-talk {
+    display: inline-block;
+
+    width: 310px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: var(--cor-main-one);
+
+    padding: 5px 50px;
+    border: 2px solid var(--cor-main-one);
+    border-radius: 10px;
+
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+
+}
+
+.btns .btn-talk:hover {
+    border: 2px solid var(--cor-main-two);
+}
+
+.btns .btn-talk::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--cor-main-two);
+    transition: .5s;
+    z-index: -1;
+
+}
+
+.btns .btn-talk:hover::before {
+    width: 100%;
+
+}
+
+/* ---------- social ---------- */
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+    margin-left: 5rem;
+
+}
+
+.social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2.4rem;
+    padding: 1.5rem;
+    border: 2px solid var(--cor-main-one);
+    border-radius: 50%;
+    color: var(--cor-main-one);
+
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+
+}
+
+.social a:hover {
+    border: 2px solid var(--cor-main-two);
+
+}
+
+.social a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--cor-main-two);
+    z-index: -1;
+    transition: .5s;
+
+}
+
+.social a:hover::before {
+    width: 100%;
+
+}
+
+/* ---------- box-img ---------- */
+
+.box-img {
+    width: 40%;
+
+}
+
+.img {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.img-personal {
+    width: 90%;
+    border: 2px solid var(--cor-main-two);
+    border-radius: 50%;
+    transition: .5s;
+    box-shadow: 40px 0px 300px var(--cor-main-two);
+
+}
+
+.img .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* transform: translate(-50%, -50%) rotate(0); */
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: 3px solid var(--cor-bg-one);
+    border-bottom: 3px solid var(--cor-bg-one);
+    border-left: 3px solid var(--cor-main-two);
+    border-right: 3px solid var(--cor-main-two);
+
+}

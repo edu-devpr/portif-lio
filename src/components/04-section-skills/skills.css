@@ -1,0 +1,230 @@
+.skills {
+    width: 100%;
+    height: 100vh;
+    padding: 12rem 10% 12rem 10%;
+    background-color: var(--cor-bg-one);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ---------- my-skills ---------- */
+.skills .skills-main-title {
+    font-size: 6.8rem;
+    font-weight: 700;
+    letter-spacing: .5rem;
+
+    margin: 5rem 0;
+    user-select: none;
+    color: var(--cor-main-one);
+    position: relative;
+}
+
+.skills .skills-main-title::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: .2rem;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    background-color: rgba(165, 42, 42, 10);
+}
+
+.skills .skills-main-title:hover::before {
+    width: 100%;
+}
+
+.skills .skills-main-title::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: .2rem;
+    bottom: 0;
+    left: 0;
+    transition: .5s;
+    background-color: rgba(165, 42, 42, 10);
+}
+
+.skills .skills-main-title:hover::after {
+    width: 100%;
+}
+
+.skills .skills-main-title span {
+    color: var(--cor-main-two);
+}
+
+
+
+
+/* ---------- skills-information ---------- */
+.skills .skills-information {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skills .skills-information .grow {
+    flex: 1 1 40rem;
+}
+
+/* ---------- title-coding ---------- */
+.skills-information .skills-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    letter-spacing: .5rem;
+    padding: 1rem 1.6rem;
+    color: var(--cor-main-one);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.skills-information .skills-title span {
+    color: var(--cor-main-two);
+}
+
+/* ---------- border-lateral ---------- */
+.skills-information .border-lateral {
+    border-left: 0.2rem solid var(--cor-main-two);
+    padding: 0 0 0 1rem;
+    margin: 0px 2rem;
+
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.skills-information .border-lateral::before {
+    content: "";
+    position: absolute;
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color: var(--cor-main-two);
+    border-radius: 50%;
+    top: 0rem;
+    left: -9px;
+}
+
+.skills-information .box-content {
+    border: .2rem solid var(--cor-main-two);
+    border-radius: 1rem;
+    margin-left: 1rem;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    position: relative;
+
+}
+
+.skills-information .box-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(165, 42, 42, .2);
+    transition: .5s;
+}
+
+.skills-information .box-content:hover::before {
+    width: 0%;
+}
+
+.skills-information .content {
+    border-radius: 1rem;
+    margin-left: 1rem;
+    padding: 1.6rem;
+}
+
+.skills-information .title-technology {
+    font-size: 2rem;
+    color: var(--cor-main-one);
+    margin-bottom: 1.6rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.percentage-bar {
+    border: .2rem solid var(--cor-main-two);
+    border-radius: .5rem;
+    height: 2.4rem;
+    padding: .3rem;
+}
+
+.percentage-bar span {
+    display: block;
+    height: 100%;
+    border-radius: .2rem;
+    background-color: var(--cor-main-two);
+}
+
+/* ----- skills-coding ----- */
+.skills-information .skills-coding .content:nth-child(1) .percentage-bar span {
+    width: 90%;
+}
+
+.skills-information .skills-coding .content:nth-child(2) .percentage-bar span {
+    width: 85%;
+}
+
+.skills-information .skills-coding .content:nth-child(3) .percentage-bar span {
+    width: 60%;
+}
+
+.skills-information .skills-coding .content:nth-child(4) .percentage-bar span {
+    width: 70%;
+}
+
+/* ----- skills-profession ----- */
+.skills-information .skills-profession .content:nth-child(1) .percentage-bar span {
+    width: 85%;
+}
+
+.skills-information .skills-profession .content:nth-child(2) .percentage-bar span {
+    width: 72%;
+}
+
+.skills-information .skills-profession .content:nth-child(3) .percentage-bar span {
+    width: 60%;
+}
+
+.skills-information .skills-profession .content:nth-child(4) .percentage-bar span {
+    width: 90%;
+}
+
+/* .skills-information .skills-coding .percentage-bar span:nth-child(2) {
+    width: 50%;
+} */
+
+/* .skills-information .percentage-bar {
+    height: 2.5rem;
+    border: .1rem solid var(--cor-main-two);
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.skills-information .percentage-bar::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: .5rem;
+    transition: .5s;
+    background-color: var(--cor-main-two);
+}
+
+.skills-information .percentage-bar:hover::before {
+    width: 100%;
+} */
